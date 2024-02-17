@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+.w-1200 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contacts {
+    background-color: black;
+    padding: 50px 0;
+}
+
+.contact h2 {
+    font-size: 40px;
+    color: white;
+    font-family: 'Rubik Mono One';
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.cont_cont {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cont_img img{
+    width: 700px;
+}
+
+.cont_img img:hover {
+    filter: drop-shadow(0 0 10px #FF008A);
+    transition: .5s;
+}
+
+.cont_text h3 {
+    font-size: 25px;
+    color: white;
+    font-family: 'Rubik Mono One';
+    padding: 10px 0;
+}
+
+.cont_text p {
+    font-size: 15px;
+    color: white;
+    padding: 10px 0;
+}
+
+.icons {
+    width: 200px;
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.icons img {
+    width: 40px;
+}
+
+.icons img:hover {
+    filter: drop-shadow(0 0 10px #FF008A);
+    transition: .5s;
+}
+
+.pointer {
+    cursor: pointer;
+    color: white;
+}
+
+.pointer:hover {
+    color: #FF008A;
+    transition: .5s;
+}
