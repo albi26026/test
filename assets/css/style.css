@@ -1,0 +1,1061 @@
+/* Общее */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: block;
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    transition: .5s;
+    text-decoration: none;
+}
+
+/* Подключение шрифта */
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 800;
+}
+
+/* Ограничение контента */
+.w-1200 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Кнопка */
+.btn {
+    background-color: #EA6200;
+    border-radius: 10px;
+    color: white;
+    width: 70px;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    background-color: #ba4e01;
+}
+
+/* Отступ блоков */
+.pad-50 {
+    padding: 50px 0;
+}
+
+/* Шапка сайта */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo {
+    width: 130px;
+}
+
+.head-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.head-nav a {
+    color: #333;
+}
+
+.head-nav a:hover {
+    transform: scale(1.1);
+    color: #0744AE;
+}
+
+.head-icon {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.head-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.head-icon img:hover {
+    transform: scale(1.1);
+}
+
+/* Баннер */
+.banner {
+    background: url(../img/banner.png);
+    width: 100%;
+    height: 75vh;
+    background-size: cover;
+}
+
+.banner-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 8%;
+}
+
+.banner-items h1 {
+    color: white;
+    font-size: 45px;
+}
+
+.banner-items p {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* О нас */
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about img {
+    width: 380px;
+}
+
+.about-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 500px;
+}
+
+.about-txt .title h3 {
+    color: #ea62009c;
+    font-size: 17px;
+}
+
+.about-txt .title h2 {
+    color: #0744AE;
+    font-size: 30px;
+    font-family: "Montserrat-Bold";
+    font-weight: 800;
+}
+
+.about-txt .btn {
+    width: 90px;
+}
+
+/* Адрес */
+.adres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.adres img {
+    width: 600px;
+}
+
+.adres-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.adres-txt .title h3 {
+    color: #0744aeae;
+    font-size: 17px;
+}
+
+.adres-txt .title h2 {
+    color: #EA6200;
+    font-size: 30px;
+    font-family: "Montserrat-Bold";
+    font-weight: 800;
+}
+
+.adres-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.adres-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.adres-item img {
+    width: 25px;
+}
+
+.adres-icon {
+    display: flex;
+    gap: 10px;
+}
+
+.adres-icon img {
+    width: 30px;
+}
+
+.adres-icon img:hover {
+    transform: scale(1.1);
+}
+
+/* новости */
+.news .title {
+    margin-left: 10%;
+}
+
+.news .title h3 {
+    color: #EA6200;
+    font-size: 17px;
+}
+
+.news .title h2 {
+    color: #0744AE;
+    font-size: 30px;
+    font-family: "Montserrat-Bold";
+    font-weight: 800;
+}
+
+.news-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.news-item2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.news-item1 {
+    width: 600px;
+    height: 600px;
+    background: url(../img/new1.png);
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+}
+
+.news-txt1 {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+}
+
+.news-txt1 p, .news-txt1 h2 {
+    color: white;
+    font-size: 18px;
+}
+
+.news-item3 {
+    width: 290px;
+    height: 290px;
+    background: url(../img/new2.png);
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+}
+
+.news-txt2 {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+}
+
+.news-txt2 p, .news-txt2 h2 {
+    color: white;
+    font-size: 16px;
+}
+
+.news-item4 {
+    width: 290px;
+    height: 290px;
+    background: url(../img/new3.png);
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+}
+
+.news-txt3 {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+}
+
+.news-txt3 p, .news-txt3 h2 {
+    color: white;
+    font-size: 16px;
+}
+
+/* подвал */
+footer {
+    background-color: #333;
+    padding-left: 15%;
+}
+
+.footer-items {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-item h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.footer-item nav a {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer-item2 h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.footer-seti {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-item3 h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.footer-phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-phone a {
+    color: white;
+}
+
+.footer-item4 h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.footer-geo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-geo p {
+    color: white;
+}
+
+/* Страница каталога */
+/* Сортировка */
+.sortirovka {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort-items {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sort-items p b {
+    font-size: 20px;
+}
+
+select {
+    background: #33333370;
+    border: none;
+    padding: 6px;
+    border-radius: 10px;
+    width: 180px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    background: #33333370;
+    padding: 6px;
+    border-radius: 10px 0 0 10px;
+    height: 35px;
+}
+
+.search img {
+    padding: 6px;
+    width: 25px;
+    height: 24px;
+    border-radius: 0 10px 10px 0;
+    background: #33333370;
+}
+
+/* Каталог */
+.catalog-items {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.catalog-items a {
+    color: black;
+}
+
+.catalog-item {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 50px;
+}
+
+.hit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hit p {
+    padding-top: 5px;
+    padding-left: 10px;
+    border-radius: 25px 0 25px 0;
+    background: #0744AE;
+    width: 47px;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+}
+
+.hit img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.hit-net {
+    margin-left: 270px;
+}
+
+.hit-net img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.hit-net img:hover {
+    transform: scale(1.1);
+}
+
+.catalog-item .btn {
+    color: white;
+    background: #0744AE;
+    width: 130px;
+}
+
+.catalog-item .btn:hover {
+    background: #25163b;
+}
+
+.catalog-img-1 {
+    width: 300px;
+    height: 185px;
+    background: url(../img/k7.png);
+    background-size: cover;
+}
+
+.catalog-img-2 {
+    width: 300px;
+    height: 185px;
+    background: url(../img/k2.png);
+    background-size: cover;
+}
+
+.catalog-img-3 {
+    width: 315px;
+    height: 185px;
+    background: url(../img/k6.png);
+    background-size: cover;
+}
+
+.catalog-img-4 {
+    width: 315px;
+    height: 185px;
+    background: url(../img/k1.png);
+    background-size: cover;
+}
+
+.catalog-img-5 {
+    width: 315px;
+    height: 185px;
+    background: url(../img/k12.png);
+    background-size: cover;
+}
+
+.catalog-img-6 {
+    width: 315px;
+    height: 185px;
+    background: url(../img/k11.png);
+    background-size: cover;
+}
+
+.catalog-img-7 {
+    width: 315px;
+    height: 185px;
+    background: url(../img/k10.png);
+    background-size: cover;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 38%;
+    margin-bottom: 50px;
+}
+
+.pagination a {
+    color: #333333;
+}
+
+.pagination a:hover {
+    transform: scale(1.1);
+}
+
+.pag-1 {
+    transform: rotate(90deg);
+}
+
+.pag-2 {
+    transform: rotate(270deg);
+}
+
+/* Карточка товара */
+/* Товар */
+.tovar {
+    display: flex;
+    gap: 150px;
+}
+
+.tovar img {
+    width: 500px;
+    height: 380px;
+}
+
+.tovar-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tovar-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tovar h2 {
+    font-size: 20px;
+}
+
+.tovar-item p {
+    font-size: 24px;
+    color: #333333;
+}
+
+.razmer {
+    padding: 7px 20px;
+    border-radius: 20px;
+    background: #33333343;
+}
+
+.razmer:hover {
+    background: #3333337a;
+}
+
+.btn-tovar {
+    background: #0744AE;
+    color: white;
+    font-size: bold;
+    border-radius: 10px;
+    padding: 20px 140px;
+    margin-top: 10px;
+}
+
+.btn-tovar:hover {
+    background: #25163b;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+/* Корзина */
+.h2-tovar {
+    margin-top: 20px;
+}
+
+.korzina {
+    display: flex;
+    gap: 150px;
+}
+
+.korzina-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.korzina img {
+    width: 500px;
+    height: 320px;
+}
+
+.korzina-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.korz-btn {
+    padding: 10px 15px;
+    color: white;
+    border-radius: 10px;
+    background: #0744AE;
+    width: 160px;
+    margin-top: 120px;
+    margin-left: 300px;
+}
+
+.korz-btn:hover {
+    background: #25163b;
+}
+
+.zakaz {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 900px;
+}
+
+.zakaz-btn {
+    padding: 10px 15px;
+    color: white;
+    border-radius: 10px;
+    background: #0744AE;
+}
+
+.zakaz-btn:hover {
+    background: #25163b;
+}
+
+@media screen and (max-width:380px) {
+
+    h2 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    
+    /* шапка */
+    header {
+        height: 40px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    .head-nav {
+        display: none;
+    }
+
+    header .head-icon img {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* баннер */
+    .banner {
+        width: 380px;
+        height: 80vh;
+    }
+
+    .banner-items {
+        padding: 30px;
+        display: flex;
+        justify-content: left;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .banner-items h1 {
+        font-size: 30px;
+    }
+
+    /* популярное */
+    
+    .hit {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .hit p {
+        padding-top: 5px;
+        padding-left: 10px;
+        border-radius: 15px 0 15px 0;
+        font-size: 12px;
+        background: #0744AE;
+        width: 37px;
+        color: white;
+        font-weight: bold;
+        height: 25px;
+    }
+    
+    .hit img {
+        width: 16px;
+        height: 16px;
+        margin: 8px;
+    }
+
+    /* о нас */
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about img {
+        width: 300px;
+    }
+
+    .about-txt {
+        padding: 30px;
+    }
+
+    /* Контакты */
+    .adres {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .adres .karta {
+        width: 350px;
+    }
+
+    /* Новости */
+    .news-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .news-item1 {
+        width: 290px;
+        height: 290px;
+    }
+
+
+    /* Подвал сайта */
+    .footer-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* страница каталог/хлебные крошки */
+    .kroshki {
+        padding: 10px;
+    }
+
+    /* сортировка */
+    .sortirovka {
+        flex-wrap: wrap;
+        row-gap: 10px;
+        justify-content: right;
+    }
+
+    .sort-items p b {
+        font-size: 12px;
+    }
+
+    .sort-items select {
+        font-size: 12px;
+        width: 120px;
+    }
+
+    .search input {
+        width: 92px;
+        height: 27px;
+    }
+
+    .search img {
+        width: 17px;
+        height: 17px;
+    }
+
+    /* каталог */
+    .catalog {
+        padding: 0;
+    }
+
+    .catalog-items {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .catalog-items a p {
+        color: #333333;
+    }
+
+    .catalog-items .hit p {
+        color: white;
+    }
+    
+    .catalog-item {
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-bottom: 50px;
+    }
+    
+    .hit-net {
+        margin-left: 145px;
+    }
+    
+    .hit-net img {
+        width: 17px;
+        height: 17px;
+        margin: 10px;
+    }
+    
+    
+    .catalog-item .btn {
+        color: white;
+        background: #0744AE;
+        width: 100px;
+        font-size: 12px;
+    }
+    
+    
+    .catalog-img-1 {
+        width: 180px;
+        height: 115px;
+        border-radius: 15px;
+        
+        background-size: cover;
+    }
+    
+    .catalog-img-2 {
+        width: 180px;
+        height: 115px;
+        border-radius: 15px;
+        
+        background-size: cover;
+    }
+    
+    .catalog-img-3 {
+        width: 180px;
+        height: 115px;
+        border-radius: 15px;
+        
+        background-size: cover;
+    }
+    
+    .catalog-img-4 {
+        width: 180px;
+        height: 115px;
+        border-radius: 15px;
+ 
+        background-size: cover;
+    }
+    
+    .catalog-img-5 {
+        width: 180px;
+        height: 115px;
+        border-radius: 15px;
+      
+        background-size: cover;
+    }
+    
+    .catalog-img-6 {
+        width: 180px;
+        height: 115px;
+        border-radius: 15px;
+     
+        background-size: cover;
+    }
+    
+    .catalog-img-7 {
+        width: 180px;
+        height: 115px;
+        border-radius: 15px;
+ 
+        background-size: cover;
+    }
+    
+    .pagination {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 28%;
+        margin-bottom: 15px;
+    }
+
+    /* товар */
+    .tovar {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .tovar img {
+        width: 400px;
+        height: 200px;
+    }
+    
+    .tovar-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .tovar-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .tovar h2 {
+        font-size: 14px;
+    }
+    
+    .tovar-item p {
+        font-size: 12px;
+        color: #333333;
+    }
+    
+    .razmer {
+        padding: 7px 20px;
+        border-radius: 20px;
+        background: #33333343;
+    }
+    
+    .btn-tovar {
+        background: #0744AE;
+        color: white;
+        font-size: bold;
+        font-size: 14px;
+        border-radius: 10px;
+        padding: 20px 140px;
+        margin-top: 10px;
+    }
+    
+    ul {
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    ul li {
+        font-size: 12px;
+    }
+
+    /* корзина */
+    .h2-tovar {
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+    
+    .korzina {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    
+    .korzina-items {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .korzina img {
+        width: 380px;
+        height: 200px;
+    }
+    
+    .korzina-item {
+        display: flex;
+        align-items: center;
+        width: 380px;
+    }
+
+    .korzina-item p b {
+        font-size: 12px;
+        margin-right: 25px;
+    }
+    
+    .korz-btn {
+        padding: 10px 15px;
+        color: white;
+        border-radius: 10px;
+        background: #0744AE;
+        width: 120px;
+        margin-top: 20px;
+        margin-left: 227px;
+        font-size: 12px;
+    }
+    
+    .zakaz {
+        display: flex;
+        gap: 10px;
+        margin-left: 80px;
+    }
+    
+    .zakaz-btn {
+        padding: 10px 15px;
+        color: white;
+        border-radius: 10px;
+        background: #0744AE;
+        font-size: 12px;
+    }
+    
+}
